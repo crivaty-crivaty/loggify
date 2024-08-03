@@ -1,7 +1,7 @@
-import { handleAuditLogTrigger} from "../src/index.js";
+import { handleAuditLogTrigger} from "@loggify";
 import { test, vi, expect } from 'vitest'
-import { MockAppData, MockCredential, MockUser } from "./configuration/data.js";
-import { config } from "./configuration/config.js";
+import { MockAppData, MockCredential, MockUser } from "./configuration/data";
+import { config } from "./configuration";
 
 test('Expect proper data flow within the algorithm.', async (t) => {
   const getRelevantCredentials =  vi.spyOn(config, 'getRelevantCredentials')

@@ -1,4 +1,4 @@
-import { AvailableEventsDefinition, CRUD, LibraryConfiguration, TargetDefinition } from "../../src/types";
+import { AvailableEventsDefinition, CRUD, LibraryConfiguration, TargetDefinition } from "@loggify/types";
 import { Targets, DynamicDataSchemaPerTarget, EventsPerTargetValue, BookingEvents, AppsEvents, ApiEvents, CredentialEvents, SystemEvents, CredentialData, BookingData, AppData, ApiEventData, WebhookData, SystemEventData } from './types';
 import { MockCredential } from './data';
 import { WebhookEvents } from "./types";

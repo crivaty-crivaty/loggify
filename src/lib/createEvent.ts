@@ -1,5 +1,5 @@
-import { DataSchema, EventBase, EventDefinition, TargetBase, UserBase } from "../types.js";
-import { flattenObject } from "../utils/index.js";
+import { DataSchema, EventBase, EventDefinition, TargetBase, UserBase } from "../types";
+import { flattenObject } from "../utils/index";
 import { z, ZodSchema} from "zod"
 
 export function createEvent<

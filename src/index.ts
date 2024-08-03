@@ -1,5 +1,5 @@
-import { createEvent } from './lib/createEvent.js';
-import { CredentialBase, LibraryConfiguration, TargetBase, EventBase, DataSchema, UserBase, EventsPerTarget, SchemasPerTarget, AvailableEventsDefinition, TargetDefinition, RuntimeData } from './types.js';
+import { createEvent } from './lib/createEvent';
+import { CredentialBase, LibraryConfiguration, TargetBase, EventBase, DataSchema, UserBase, EventsPerTarget, SchemasPerTarget, AvailableEventsDefinition, TargetDefinition, RuntimeData } from './types';
 import { z } from "zod"
 
 export async function handleAuditLogTrigger<
