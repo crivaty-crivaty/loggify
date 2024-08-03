@@ -26,7 +26,6 @@
 		"lint": "tsc",
 		"ci": "yarn run lint && yarn run test && yarn run build",
 		"release": "yarn run lint && yarn run test && yarn run build && changeset publish",
-		"publish": "changeset publish",
 		"format:check": "prettier  \"./src/**/**.ts\" --check",
 		"format": "prettier --write \"./src/**/**.ts\" --write"
 	},
