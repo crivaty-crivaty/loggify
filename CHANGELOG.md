@@ -1,5 +1,11 @@
 # @crivaty/loggify
 
+## 0.0.6
+
+### Patch Changes
+
+- 065ad56: Remove test from source code
+
 ## 0.0.5
 
 ### Patch Changes
