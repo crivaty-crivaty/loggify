@@ -2,7 +2,7 @@
 	"name": "@crivaty/loggify",
 	"version": "0.0.2",
 	"author": "Oliver Quixchan",
-	"license": "ISC",
+	"license": "MIT",
 	"description": "",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -16,12 +16,12 @@
 		"release": "yarn run lint && yarn run test && yarn run build && changeset publish"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.27.7",
 		"@faker-js/faker": "^8.4.1",
 		"@types/node": "^22.1.0",
 		"tsup": "^8.2.4",
 		"typescript": "^5.5.3",
-		"vitest": "^2.0.4",
-		"@changesets/cli": "^2.27.7"
+		"vitest": "^2.0.4"
 	},
 	"dependencies": {
 		"zod": "^3.23.8"
