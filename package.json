@@ -12,14 +12,16 @@
 		"test": "vitest run",
 		"dev": "vitest",
 		"lint": "tsc",
-		"ci": "yarn run lint && yarn run test && yarn run build"
+		"ci": "yarn run lint && yarn run test && yarn run build",
+		"release": "yarn run lint && yarn run test && yarn run build && changeset publish"
 	},
 	"devDependencies": {
 		"@faker-js/faker": "^8.4.1",
 		"@types/node": "^22.1.0",
 		"tsup": "^8.2.4",
 		"typescript": "^5.5.3",
-		"vitest": "^2.0.4"
+		"vitest": "^2.0.4",
+		"@changesets/cli": "^2.27.7"
 	},
 	"dependencies": {
 		"zod": "^3.23.8"
