@@ -1,6 +1,6 @@
 {
 	"name": "@crivaty/loggify",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": "Oliver Quixchan",
 	"license": "MIT",
 	"repository": {
@@ -28,7 +28,7 @@
 		"release": "yarn run lint && yarn run test && yarn run build && changeset publish",
 		"publish": "changeset publish",
 		"format:check": "prettier  \"./src/**/**.ts\" --check",
-    	"format": "prettier --write \"./src/**/**.ts\" --write"
+		"format": "prettier --write \"./src/**/**.ts\" --write"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.7",
