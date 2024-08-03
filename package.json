@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "github",
-		"url": "https://github.com/crivaty-crivaty/loggify"
+		"url": "git+https://github.com/crivaty-crivaty/loggify.git"
 	},
 	"homepage": "https://www.npmjs.com/package/@crivaty/loggify",
 	"description": "A library for setting up a maintainable, type-safe audit logging system with robust schema validation and structured management of arbitrary events across arbitrary targets.",
