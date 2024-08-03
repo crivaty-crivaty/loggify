@@ -3,27 +3,52 @@
 	"version": "0.0.2",
 	"author": "Oliver Quixchan",
 	"license": "MIT",
-	"description": "",
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/crivaty-crivaty/loggify"
+	},
+	"homepage": "https://www.npmjs.com/package/@crivaty/loggify",
+	"description": "A library for setting up a maintainable, type-safe audit logging system with robust schema validation and structured management of arbitrary events across arbitrary targets.",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.js",
+			"import": "./dist/index.mjs",
+			"default": "./dist/index.d.ts"
+		}
+	},
 	"scripts": {
 		"build": "tsup src/index.ts --format cjs,esm --dts",
 		"test": "vitest run",
 		"dev": "vitest",
 		"lint": "tsc",
 		"ci": "yarn run lint && yarn run test && yarn run build",
-		"release": "yarn run lint && yarn run test && yarn run build && changeset publish"
+		"release": "yarn run lint && yarn run test && yarn run build && changeset publish",
+		"publish": "changeset publish",
+		"format:check": "prettier  \"./src/**/**.ts\" --check",
+    	"format": "prettier --write \"./src/**/**.ts\" --write"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.7",
 		"@faker-js/faker": "^8.4.1",
 		"@types/node": "^22.1.0",
+		"prettier": "^3.3.3",
 		"tsup": "^8.2.4",
 		"typescript": "^5.5.3",
 		"vitest": "^2.0.4"
 	},
 	"dependencies": {
 		"zod": "^3.23.8"
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"trailingComma": "all",
+		"semi": true,
+		"printWidth": 80,
+		"singleQuote": false,
+		"tabWidth": 2,
+		"useTabs": false
 	}
 }
